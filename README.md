@@ -9,7 +9,7 @@ This project was developed to ensure the Confidentiality, Integrity, and Availab
 
 ## 🗺️ Network Topology
 
-![NeuroGrid Dynamics Network Topology]()
+![NeuroGrid Dynamics Network Topology](NeuroGrid_Dynamics.png)
 
 ---
 
@@ -17,9 +17,9 @@ This project was developed to ensure the Confidentiality, Integrity, and Availab
 NeuroGrid Dynamics recently underwent an internal security audit that identified vulnerabilities such as weak access controls, a lack of network segmentation, and insecure communication channels. 
 
 To address these critical flaws, I engineered a comprehensive network redesign that ensures:
- Secure interconnections between the Gulf offices and the Amman headquarters
- Strictly controlled and monitored access to the central data center, which is logically separated into a dedicated subnet.
- Secure employee access to the internal Smart Operations Portal (SOP) via its Fully Qualified Domain Name (FQDN).
+* Secure interconnections between the Gulf offices and the Amman headquarters
+* Strictly controlled and monitored access to the central data center, which is logically separated into a dedicated subnet.
+* Secure employee access to the internal Smart Operations Portal (SOP) via its Fully Qualified Domain Name (FQDN).
 
 ---
 
@@ -27,12 +27,12 @@ To address these critical flaws, I engineered a comprehensive network redesign t
 
 I utilized Cisco Packet Tracer to simulate, validate, and test the following security mechanisms[cite: 97, 98]:
 
-**Network Segmentation (VLANs):** Logically isolated traffic using VLANs (VLAN 10 for Administration, VLAN 20 for Production, VLAN 30 for Warehouse, and VLAN 50 for the Data Center) with secure 802.1Q trunk links.
-**IPsec Site-to-Site VPN:** Configured secure, encrypted VPN tunnels between the Qatar and Dubai branches to protect data traversing public networks.
-**Access Control Lists (ACLs):** Deployed Standard and Extended ACLs to enforce granular traffic filtering and restrict unauthorized access to critical servers.
-**Identity & Access Management:** Integrated an AAA (Authentication, Authorization, and Accounting) server for centralized administrative access control.
-**Layer 2 Security:** Hardened the infrastructure by implementing switch port security features and configuring robust passwords on all routers and switches.
-**Secure Network Services:** Secured internal communications by enforcing HTTPS for web traffic, alongside properly configured DNS and DHCP services.
+* **Network Segmentation (VLANs):** Logically isolated traffic using VLANs (VLAN 10 for Administration, VLAN 20 for Production, VLAN 30 for Warehouse, and VLAN 50 for the Data Center) with secure 802.1Q trunk links.
+* **IPsec Site-to-Site VPN:** Configured secure, encrypted VPN tunnels between the Qatar and Dubai branches to protect data traversing public networks.
+* **Access Control Lists (ACLs):** Deployed Standard and Extended ACLs to enforce granular traffic filtering and restrict unauthorized access to critical servers.
+* **Identity & Access Management:** Integrated an AAA (Authentication, Authorization, and Accounting) server for centralized administrative access control.
+* **Layer 2 Security:** Hardened the infrastructure by implementing switch port security features and configuring robust passwords on all routers and switches.
+* **Secure Network Services:** Secured internal communications by enforcing HTTPS for web traffic, alongside properly configured DNS and DHCP services.
 
 ---
 
